@@ -1,0 +1,19 @@
+.head-separator {
+  height: 1px;
+  background-color: rgb(91, 91, 94);
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.head-separator img {
+  display: none;
+}
+
+@media (min-width: 468px) {
+  .head-separator img {
+    display: block;
+    position: absolute;
+    right: 0;
+    transform: translateY(-44%);
+  }
+}

@@ -1,0 +1,15 @@
+.about {
+  line-height: 2.3;
+  padding-bottom: 2rem;
+  text-align: justify;
+  hyphens: auto;
+  font-family:
+    'Noto Sans Mono',
+    'IBM Plex Mono' serif;
+}
+
+@media (min-width: 768px) {
+  .about {
+    line-height: 1.625;
+  }
+}

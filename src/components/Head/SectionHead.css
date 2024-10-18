@@ -1,0 +1,39 @@
+.head {
+  padding-bottom: 1rem;
+}
+.head h1 {
+  font-size: large;
+  line-height: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.head p {
+  font-size: medium;
+  margin: 0;
+  line-height: 1.5rem;
+  color: rgb(161, 161, 170);
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .head {
+    gap: 2px;
+  }
+  .head h1 {
+    font-size: large;
+    margin: 0;
+    padding: 0;
+  }
+
+  .head p {
+    font-size: large;
+    margin: 0;
+    line-height: 1.5rem;
+    color: rgb(161, 161, 170);
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+}
