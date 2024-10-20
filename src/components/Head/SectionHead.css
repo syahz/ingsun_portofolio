@@ -18,7 +18,8 @@
 
 @media (min-width: 768px) {
   .head {
-    gap: 2px;
+    margin: 0;
+    max-width: 800px;
   }
   .head h1 {
     font-size: large;

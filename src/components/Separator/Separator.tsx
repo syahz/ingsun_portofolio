@@ -1,7 +1,7 @@
 import './Separator.css'
 
 const Separator = () => {
-  return <div className='separator container' />
+  return <div className='separator ' />
 }
 
 export default Separator

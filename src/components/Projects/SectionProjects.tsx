@@ -10,28 +10,35 @@ const ListProjects = [
     title: 'MY-BK',
     description: 'ExpressJS NextJS Puppeteer',
     src: 'mybk.png',
-    color: '#000000'
+    color: '#ebebeb'
   },
   {
     url: 'https://github.com/syahz/Himmaba',
     title: 'HIMMABA',
     description: 'Laravel Bootstrap JQuery',
     src: 'himmaba.png',
-    color: '#acdb9e'
+    color: '#ebebeb'
   },
   {
     url: 'https://www.sijimat.ptspkotamalang.net/',
     title: 'SIJIMAT',
     description: 'Codeigniter Bootstrap JQuery',
     src: 'sijimat.png',
-    color: '#aef299'
+    color: '#ebebeb'
+  },
+  {
+    url: 'https://sim-lphub.ub.ac.id/',
+    title: 'LPH UB',
+    description: 'Laravel Inertia Tailwind',
+    src: 'lphub.png',
+    color: '#ebebeb'
   }
 ]
 
 const SectionProjects = () => {
   const [modal, setModal] = useState({ active: false, index: 0 })
   return (
-    <section className='projects container'>
+    <section className='projects'>
       <h2>Projects</h2>
       <div className='list-projects'>
         <Separator />

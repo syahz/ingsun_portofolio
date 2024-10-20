@@ -16,7 +16,7 @@ const SectionMiniProjects = () => {
   ]
 
   return (
-    <section className='projects container'>
+    <section className='projects'>
       <h2>Mini Project</h2>
       <div className='list-projects'>
         <Separator />

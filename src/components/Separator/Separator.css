@@ -1,7 +1,5 @@
 .separator {
   height: 1px;
   background-color: rgb(91, 91, 94);
-  margin-top: 5px;
-  margin-bottom: 5px;
-  position: relative;
+  max-width: 800px;
 }

@@ -36,7 +36,7 @@ const SectionSkills = () => {
   ]
   return (
     <>
-      <section className='skills container'>
+      <section className='skills'>
         <h2>Skills</h2>
         <div className='list-skills'>
           {skills.map((skill, index) => (

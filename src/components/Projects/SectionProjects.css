@@ -34,7 +34,7 @@
   .list-projects .card {
     font-size: larger;
     display: flex;
-    padding: 40px;
+    padding: 30px;
     padding-inline: 20px;
     align-items: center;
     justify-content: space-between;

@@ -2,7 +2,7 @@ import './SectionAbout.css'
 
 const SectionAbout = () => {
   return (
-    <section className='about container'>
+    <section className='about '>
       <p>
         Hi👋 I’am Syafiq. Graduated with a Bachelor of Information Engineering from the State Islamic University of Maulana Malik Ibrahim Malang, has construction
         experience web backend within 3 months at the Ministry of Religion of Malang City.

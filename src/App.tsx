@@ -9,6 +9,7 @@ import SectionSkills from './components/Skills/SectionSkills'
 import SectionProjects from './components/Projects/SectionProjects'
 import HeadSeparator from './components/HeadSeparator/HeadSeparator'
 import SectionMiniProjects from './components/MiniProjects/SectionMiniProjects'
+import PreLoader from './components/PreLoader/PreLoader'
 
 function App() {
   useEffect(() => {
@@ -22,13 +23,16 @@ function App() {
 
   return (
     <main>
+      <PreLoader />
       <Leva hidden />
-      <SectionHead />
-      <HeadSeparator />
-      <SectionAbout />
-      <SectionSkills />
-      <SectionProjects />
-      <SectionMiniProjects />
+      <div className='container'>
+        <SectionHead />
+        <HeadSeparator />
+        <SectionAbout />
+        <SectionSkills />
+        <SectionProjects />
+        <SectionMiniProjects />
+      </div>
       <Contact />
     </main>
   )

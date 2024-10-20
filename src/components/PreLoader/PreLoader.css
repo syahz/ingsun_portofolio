@@ -1,0 +1,30 @@
+.loader {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100lvh;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #121212;
+}
+
+.texts-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  justify-items: center;
+}
+
+.texts-container > :nth-child(1) {
+  justify-self: end;
+}
+
+.texts-container > :nth-child(2) {
+  justify-self: start;
+}

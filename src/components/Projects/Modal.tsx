@@ -13,7 +13,6 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
   const { active, index } = modal
   const modalContainer = useRef<HTMLDivElement>(null)
-  const cursor = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (active) {
@@ -22,16 +21,8 @@ const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
         xPercent: -50,
         yPercent: -50
       })
-      gsap.to(cursor.current, {
-        scale: 1,
-        xPercent: -50,
-        yPercent: -50
-      })
     } else {
       gsap.to(modalContainer.current, {
-        scale: 0
-      })
-      gsap.to(cursor.current, {
         scale: 0
       })
     }
@@ -69,7 +60,6 @@ const Modal: React.FC<ModalProps> = ({ modal, projects }) => {
           })}
         </div>
       </div>
-      <div ref={cursor} className='cursor'></div>
     </>
   )
 }
