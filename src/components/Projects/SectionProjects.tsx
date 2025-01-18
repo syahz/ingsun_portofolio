@@ -27,7 +27,7 @@ const ListProjects = [
     color: '#ebebeb'
   },
   {
-    url: 'https://sim-lphub.ub.ac.id/',
+    url: 'https://lphub.ub.ac.id/',
     title: 'LPH UB',
     description: 'Laravel Inertia Tailwind',
     src: 'lphub.png',

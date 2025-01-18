@@ -7,7 +7,7 @@ const SectionMiniProjects = () => {
   const [modal, setModal] = useState({ active: false, index: 0 })
   const ListProjects = [
     {
-      url: 'https://chat-app.ingsun.co/',
+      url: 'https://github.com/syahz/Neu',
       title: 'Chat-App',
       description: 'ExpressJS NextJS Socket.io',
       src: 'chat-app.png',

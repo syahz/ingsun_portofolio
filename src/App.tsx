@@ -9,7 +9,6 @@ import SectionSkills from './components/Skills/SectionSkills'
 import SectionProjects from './components/Projects/SectionProjects'
 import HeadSeparator from './components/HeadSeparator/HeadSeparator'
 import SectionMiniProjects from './components/MiniProjects/SectionMiniProjects'
-import PreLoader from './components/PreLoader/PreLoader'
 
 function App() {
   useEffect(() => {
@@ -23,7 +22,6 @@ function App() {
 
   return (
     <main>
-      <PreLoader />
       <Leva hidden />
       <div className='container'>
         <SectionHead />

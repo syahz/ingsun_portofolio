@@ -35,9 +35,85 @@
       name="twitter:image"
       content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v4/ingsun.co/Muhammad%20Syafiq%20Rohman/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fimages%2F152f9b5b-9b4d-482a-ae8a-1b7e0903426c.svg%3Ftoken%3De6Q-51J-otnXkmBAQxEVDImsVCXLge_y8KVuf_dWHPY%26height%3D405%26width%3D408%26expires%3D33265132512/og.png"
     />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Loader Screen */
+      .loader {
+        height: 100vh;
+        width: 100%;
+        z-index: 10;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #121212;
+        overflow: hidden;
+      }
+
+      .loader-text {
+        color: white;
+        font-size: 24px;
+        font-family: 'IBM Plex Mono', monospace;
+      }
+
+      /* Loading Bar Styles */
+      .loading-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 5px;
+        background-color: #29d;
+        width: 0;
+        transition: width 0.4s ease;
+        z-index: 100;
+      }
+    </style>
   </head>
   <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Loading Bar Element -->
+    <div class="loading-bar" id="loading-bar"></div>
+
+    <!-- Loader Screen -->
+    <div class="loader" id="intro-loader">
+      <div class="loader-text">Wait ...</div>
+    </div>
+
     <div id="root"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadingBar = document.getElementById('loading-bar')
+        loadingBar.style.width = '100%' // Start loading
+      })
+
+      window.addEventListener('load', function () {
+        const loadingBar = document.getElementById('loading-bar')
+
+        // Hide the loading bar once loaded
+        setTimeout(() => {
+          loadingBar.style.width = '0'
+
+          // Start GSAP animation after a 1-second delay
+          setTimeout(() => {
+            gsap.to('#intro-loader', {
+              yPercent: -100,
+              ease: 'power3.out',
+              duration: 3
+            })
+          }, 1000)
+        }, 1000)
+      })
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
